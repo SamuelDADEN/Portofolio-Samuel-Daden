@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#faf9f6"/>
+
+  <!-- Axes -->
+  <line x1="450" y1="30" x2="450" y2="390" stroke="#d6d2c8" stroke-width="1"/>
+  <line x1="60"  y1="210" x2="840" y2="210" stroke="#d6d2c8" stroke-width="1"/>
+
+  <!-- Grid circles (phase plane) -->
+  <circle cx="450" cy="210" r="60"  fill="none" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="450" cy="210" r="120" fill="none" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="450" cy="210" r="170" fill="none" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Duffing attractor — outer chaotic orbit -->
+  <path d="M 450,60
+    C 530,62 595,100 610,160 C 625,220 590,275 545,295
+    C 500,315 455,305 430,285 C 405,265 400,240 408,218
+    C 416,196 435,183 445,168 C 455,153 452,135 448,118
+    C 444,101 437,88 430,80
+    C 415,62 395,52 372,55 C 349,58 328,78 318,108
+    C 308,138 312,175 325,205 C 338,235 358,258 378,272
+    C 398,286 418,290 435,285
+    C 452,280 463,265 465,248 C 467,231 458,215 450,208
+    C 442,201 433,200 428,205 C 423,210 422,220 425,230
+    C 428,240 435,248 443,252 C 451,256 460,254 466,248
+    C 472,242 472,232 468,224 C 464,216 456,212 450,210"
+    fill="none" stroke="#1e3a5f" stroke-width="1.8" opacity="0.85"/>
+
+  <!-- Inner loop — second well -->
+  <path d="M 450,210
+    C 460,200 475,195 485,200 C 495,205 500,218 497,230
+    C 494,242 483,250 472,252 C 461,254 451,248 446,240
+    C 441,232 441,221 446,214 C 451,207 460,205 466,208
+    C 472,211 474,220 470,228 C 466,236 457,240 449,238"
+    fill="none" stroke="#8b2c2c" stroke-width="1.8" opacity="0.8"/>
+
+  <!-- Fixed points -->
+  <circle cx="390" cy="210" r="5" fill="#1e3a5f" stroke="#faf9f6" stroke-width="2"/>
+  <circle cx="510" cy="210" r="5" fill="#1e3a5f" stroke="#faf9f6" stroke-width="2"/>
+  <circle cx="450" cy="210" r="4" fill="none" stroke="#8b2c2c" stroke-width="2"/>
+
+  <!-- Arrows on trajectories -->
+  <polygon points="450,60 443,75 457,75" fill="#1e3a5f" opacity="0.7"/>
+  <polygon points="610,160 622,155 618,168" fill="#1e3a5f" opacity="0.7"/>
+
+  <!-- Axes labels -->
+  <text x="848" y="214" font-family="Georgia, serif" font-size="13" fill="#5c5c5c" font-style="italic">x</text>
+  <text x="454" y="22"  font-family="Georgia, serif" font-size="13" fill="#5c5c5c" font-style="italic">ẋ</text>
+
+  <!-- Fixed point labels -->
+  <text x="370" y="228" font-family="Georgia, serif" font-size="11" fill="#1e3a5f">x₋</text>
+  <text x="516" y="228" font-family="Georgia, serif" font-size="11" fill="#1e3a5f">x₊</text>
+  <text x="454" y="228" font-family="Georgia, serif" font-size="11" fill="#8b2c2c">0</text>
+
+  <!-- Legend -->
+  <line x1="640" y1="80" x2="670" y2="80" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="678" y="84" font-family="Georgia, serif" font-size="11" fill="#1e3a5f">Chaotic attractor</text>
+  <line x1="640" y1="103" x2="670" y2="103" stroke="#8b2c2c" stroke-width="2"/>
+  <text x="678" y="107" font-family="Georgia, serif" font-size="11" fill="#8b2c2c">Inner orbit (well 2)</text>
+  <circle cx="654" cy="125" r="5" fill="#1e3a5f" stroke="#faf9f6" stroke-width="2"/>
+  <text x="665" y="129" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Stable fixed point</text>
+  <circle cx="654" cy="147" r="4" fill="none" stroke="#8b2c2c" stroke-width="2"/>
+  <text x="665" y="151" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Saddle point</text>
+
+  <!-- Title -->
+  <text x="450" y="408" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Fig. 1 — Phase portrait of the Duffing oscillator (chaotic regime)</text>
+</svg>

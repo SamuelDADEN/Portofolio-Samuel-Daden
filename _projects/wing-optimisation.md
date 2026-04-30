@@ -6,6 +6,7 @@ icon: "🛩️"
 summary: "Optimised wing planform and airfoil shape to maximise the lift-to-drag ratio at cruise condition, using OpenVSP for 3D geometry and Xfoil for section-level aerodynamic evaluation."
 tools: [OpenVSP, Xfoil, Python]
 keywords: [wing optimisation, aerodynamics, lift-to-drag, airfoil, OpenVSP, Xfoil]
+image: /assets/images/wing-polar.svg
 order: 2
 ---
 
@@ -70,17 +71,10 @@ A surrogate model (response surface) is built from sampled evaluations to reduce
 
 ## Figures
 
-<!--
 <figure>
-  <img src="{{ '/assets/images/wing-polar.png' | relative_url }}" alt="Wing drag polar">
-  <figcaption>Drag polar comparison: baseline vs. optimised wing.</figcaption>
+  <img src="{{ '/assets/images/wing-polar.svg' | relative_url }}" alt="Wing drag polar">
+  <figcaption>Fig. 1 — Drag polar comparison between the baseline (dashed) and optimised wing. The tangent from the origin gives the maximum L/D operating point (●).</figcaption>
 </figure>
-
-<figure>
-  <img src="{{ '/assets/images/wing-geometry.png' | relative_url }}" alt="Wing geometry in OpenVSP">
-  <figcaption>Optimised wing geometry visualised in OpenVSP.</figcaption>
-</figure>
--->
 
 ## References & Tools
 
