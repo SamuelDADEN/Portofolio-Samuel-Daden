@@ -298,82 +298,118 @@
 .reading-list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
-.book-entry {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 20px;
-  padding: 24px 0;
-  border-bottom: 1px solid $color-border;
+.book-card {
+  border: 1px solid $color-border;
+  border-left: 3px solid $color-navy;
+  padding: 0;
+  background: $color-bg;
 
-  &:first-child { border-top: 1px solid $color-border; }
+  &:has(.book-status.reading) {
+    border-left-color: $color-navy;
+  }
+  &:has(.book-status.read) {
+    border-left-color: $color-rule;
+  }
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px 24px;
+  background: $color-surface;
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
-.book-meta {
-  padding-top: 3px;
-}
-
-.book-status {
-  display: inline-block;
-  font-family: $font-sans;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 3px 9px;
-  border-radius: $radius-sm;
-
-  &.reading {
-    background: rgba($color-navy, 0.08);
-    color: $color-navy;
-    border: 1px solid rgba($color-navy, 0.2);
-  }
-
-  &.read {
-    background: $color-surface;
-    color: $color-muted;
-    border: 1px solid $color-border;
-  }
-}
-
-.book-body {
+.book-header-main {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
+}
+
+.book-header-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .book-title {
   font-family: $font-serif;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: $color-navy;
   font-style: italic;
+  color: $color-navy;
   margin: 0;
 }
 
 .book-author {
   font-family: $font-sans;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: $color-muted;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0 0 8px;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.book-status {
+  display: inline-block;
+  font-family: $font-sans;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 3px 10px;
+  border-radius: $radius-sm;
+
+  &.reading {
+    background: rgba($color-navy, 0.1);
+    color: $color-navy;
+    border: 1px solid rgba($color-navy, 0.25);
+  }
+
+  &.read {
+    background: transparent;
+    color: $color-muted;
+    border: 1px solid $color-border;
+  }
+}
+
+.book-genre {
+  font-family: $font-mono;
+  font-size: 0.68rem;
+  color: $color-muted;
+  letter-spacing: 0.04em;
+}
+
+.book-divider {
+  height: 1px;
+  background: $color-border;
 }
 
 .book-desc {
+  padding: 18px 24px;
   font-family: $font-sans;
   font-size: 0.9rem;
   color: $color-muted;
-  line-height: 1.7;
+  line-height: 1.75;
   margin: 0;
-  max-width: 580px;
 }
 
 // ── Contact ──────────────────────────────────────────
