@@ -5,69 +5,79 @@ title: Home
 
 <!-- ── Hero ──────────────────────────────────────────── -->
 <section class="hero" id="home">
-  <div class="hero-text">
-    <div class="hero-tag">Aerospace &amp; Mechanical Engineering</div>
-    <h1>Hi, I'm <span>Samuel Daden</span></h1>
-    <p class="hero-desc">
-      Engineering student passionate about aerodynamics, structural mechanics,
-      and computational methods. I combine analytical rigor with numerical
-      simulation to tackle complex engineering challenges.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tag">Aerospace &amp; Mechanical Engineering</span>
+      <h1>Samuel Daden</h1>
+      <p class="hero-degree">
+        <!-- Add your degree, university, and year here -->
+        M.Sc. Student — École Nationale Supérieure d'Ingénieurs
+      </p>
+      <div class="hero-rule"></div>
+      <p class="hero-desc">
+        Engineering student focused on aerodynamics, structural mechanics,
+        and computational optimisation. My work combines analytical methods
+        with numerical simulation to address problems in aeronautics and
+        nonlinear mechanics.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
     </div>
-  </div>
-  <div class="hero-avatar">
-    <!-- Replace with: <img src="/assets/images/avatar.jpg" alt="Samuel Daden"> -->
-    👤
+    <div class="hero-avatar">
+      <!-- Replace with: <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Samuel Daden"> -->
+      👤
+    </div>
   </div>
 </section>
 
-<hr class="divider">
-
 <!-- ── About ─────────────────────────────────────────── -->
 <section class="section" id="about">
-  <p class="section-label">01 — About</p>
-  <h2 class="section-title">About Me</h2>
-  <p class="section-subtitle">Background &amp; interests</p>
+  <div class="section-heading">
+    <span class="section-num">§ 1</span>
+    <h2>About</h2>
+  </div>
 
   <div class="about-grid">
     <div class="about-text">
       <p>
         I am an engineering student specialising in aeronautics and mechanical
-        systems. My academic path has led me to explore the intersection of
-        classical mechanics, fluid dynamics, and modern numerical tools — from
-        finite-element analysis to computational aerodynamics.
+        systems. My academic training has led me to explore the intersection of
+        classical mechanics, fluid dynamics, and modern numerical methods —
+        from finite-element analysis to computational aerodynamics.
       </p>
       <p>
-        I am particularly drawn to optimisation problems: finding the lightest
-        structure, the most efficient wing shape, or the best control-surface
-        sizing — always with physical insight guiding the mathematics.
+        I am particularly interested in constrained optimisation problems:
+        finding the lightest structure, the most efficient wing shape, or the
+        optimal control-surface sizing — always with physical insight guiding
+        the mathematics.
       </p>
       <p>
-        <!-- Add more personal context here: university, degree, year, etc. -->
-        Feel free to reach out if you want to discuss a project or opportunity.
+        <!-- Add institution, degree level, year, research interests, etc. -->
+        Feel free to reach out to discuss a project or an opportunity.
       </p>
     </div>
 
     <div>
-      <p class="section-label" style="margin-bottom: 16px;">Skills &amp; Tools</p>
+      <p class="skills-label">Software &amp; Tools</p>
       <ul class="skills-list">
-        <li>Python</li>
+        <li>Python &amp; SciPy</li>
         <li>MATLAB</li>
         <li>OpenVSP</li>
         <li>Xfoil</li>
         <li>ANSYS</li>
         <li>SolidWorks</li>
         <li>LaTeX</li>
-        <li>CFD</li>
-        <li>FEA</li>
-        <li>Optimisation</li>
-        <li>Aerodynamics</li>
-        <li>Structural Mechanics</li>
-        <li>Signal Processing</li>
+      </ul>
+
+      <p class="skills-label">Domains</p>
+      <ul class="skills-list">
+        <li>Computational Aerodynamics</li>
+        <li>Structural Mechanics &amp; FEA</li>
         <li>Nonlinear Dynamics</li>
+        <li>Flight Mechanics</li>
+        <li>Constrained Optimisation</li>
       </ul>
     </div>
   </div>
@@ -77,24 +87,30 @@ title: Home
 
 <!-- ── Projects ──────────────────────────────────────── -->
 <section class="section" id="projects">
-  <p class="section-label">02 — Projects</p>
-  <h2 class="section-title">Selected Projects</h2>
-  <p class="section-subtitle">Engineering work &amp; research</p>
+  <div class="section-heading">
+    <span class="section-num">§ 2</span>
+    <h2>Projects</h2>
+  </div>
 
-  <div class="projects-grid">
-    {% for project in site.projects %}
+  <div class="projects-list">
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for project in sorted_projects %}
     <a href="{{ project.url | relative_url }}" class="project-card">
-      <div class="card-icon">{{ project.icon | default: "🔧" }}</div>
-      <div class="card-tag">{{ project.category }}</div>
-      <div class="card-title">{{ project.title }}</div>
-      <p class="card-desc">{{ project.summary }}</p>
-      {% if project.tools %}
-      <div class="card-tools">
-        {% for tool in project.tools %}
-        <span>{{ tool }}</span>
-        {% endfor %}
+      <span class="card-num">0{{ forloop.index }}</span>
+      <div class="card-body">
+        <div class="card-header">
+          <span class="card-title">{{ project.title }}</span>
+          <span class="card-tag">{{ project.category }}</span>
+        </div>
+        <p class="card-desc">{{ project.summary }}</p>
+        {% if project.tools %}
+        <div class="card-tools">
+          {% for tool in project.tools %}
+          <span>{{ tool }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
     </a>
     {% endfor %}
   </div>
@@ -104,12 +120,13 @@ title: Home
 
 <!-- ── Contact ───────────────────────────────────────── -->
 <section class="section" id="contact">
-  <p class="section-label">03 — Contact</p>
-  <h2 class="section-title">Get in Touch</h2>
-  <p class="section-subtitle">Open to opportunities &amp; collaborations</p>
+  <div class="section-heading">
+    <span class="section-num">§ 3</span>
+    <h2>Contact</h2>
+  </div>
 
   <div class="contact-box">
-    <h3>Let's connect</h3>
+    <h3>Get in touch</h3>
     <p>
       Whether you want to discuss a project, an internship opportunity,
       or just talk engineering — feel free to reach out.

@@ -6,32 +6,67 @@ body {
   background: $color-bg;
   color: $color-text;
   font-family: $font-sans;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: $color-accent;
-  text-decoration: none;
-  transition: color 0.2s;
-  &:hover { color: lighten($color-accent, 15%); }
+  color: $color-navy;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: $color-border;
+  transition: text-decoration-color 0.2s, color 0.2s;
+  &:hover {
+    color: $color-accent-2;
+    text-decoration-color: $color-accent-2;
+  }
 }
 
 h1, h2, h3, h4 {
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  font-family: $font-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-text;
 }
 
 img { max-width: 100%; display: block; }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 24px 0;
+
+  th {
+    text-align: left;
+    font-family: $font-sans;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $color-muted;
+    border-bottom: 2px solid $color-navy;
+    padding: 8px 12px 8px 0;
+  }
+
+  td {
+    border-bottom: 1px solid $color-border;
+    padding: 9px 12px 9px 0;
+    color: $color-muted;
+  }
+
+  tr:last-child td { border-bottom: none; }
+}
+
 code {
   font-family: $font-mono;
-  font-size: 0.875em;
+  font-size: 0.82em;
   background: $color-surface;
-  padding: 0.15em 0.4em;
+  border: 1px solid $color-border;
+  padding: 0.1em 0.4em;
   border-radius: $radius-sm;
+  color: $color-accent-2;
 }
 
 // ── Nav ─────────────────────────────────────────────
@@ -39,8 +74,7 @@ code {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba($color-bg, 0.85);
-  backdrop-filter: blur(12px);
+  background: $color-bg;
   border-bottom: 1px solid $color-border;
   height: $nav-height;
 }
@@ -48,7 +82,7 @@ code {
 .nav-inner {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -56,32 +90,36 @@ code {
 }
 
 .nav-logo {
+  font-family: $font-serif;
   font-weight: 700;
-  font-size: 1.1rem;
-  color: $color-text;
-  letter-spacing: 0.05em;
-  background: linear-gradient(135deg, $color-accent, $color-accent-2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1rem;
+  color: $color-navy;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  &:hover { color: $color-accent-2; text-decoration: none; }
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: 28px;
+
   li a {
+    font-family: $font-sans;
+    font-size: 0.875rem;
+    font-weight: 600;
     color: $color-muted;
-    font-size: 0.9rem;
-    font-weight: 500;
-    &:hover { color: $color-text; }
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    &:hover { color: $color-navy; }
   }
 }
 
 // ── Footer ──────────────────────────────────────────
 .footer {
-  border-top: 1px solid $color-border;
-  padding: 32px 24px;
+  border-top: 2px solid $color-navy;
+  padding: 28px 32px;
   margin-top: 80px;
 }
 
@@ -91,42 +129,55 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: $font-sans;
+  font-size: 0.8rem;
   color: $color-muted;
-  font-size: 0.875rem;
 }
 
 .footer-links {
   display: flex;
   gap: 20px;
-  a { color: $color-muted; &:hover { color: $color-text; } }
+  a {
+    color: $color-muted;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    &:hover { color: $color-navy; }
+  }
 }
 
 // ── Generic page ────────────────────────────────────
 .page-container {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 60px 24px 80px;
+  padding: 56px 32px 80px;
 }
 
 .page-header {
   margin-bottom: 40px;
-  h1 { font-size: 2.25rem; }
+  padding-bottom: 24px;
+  border-bottom: 1px solid $color-border;
+  h1 { font-size: 2rem; }
 }
 
 .page-subtitle {
-  margin-top: 12px;
+  margin-top: 10px;
   color: $color-muted;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  font-family: $font-sans;
 }
 
 .page-content {
-  h2 { font-size: 1.4rem; margin: 40px 0 16px; }
-  h3 { font-size: 1.15rem; margin: 28px 0 12px; color: $color-muted; }
-  p  { margin-bottom: 16px; color: $color-text; }
-  ul, ol { padding-left: 1.4em; margin-bottom: 16px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 14px; }
+  h3 { font-size: 1.05rem; margin: 24px 0 10px; color: $color-muted; }
+  p  { margin-bottom: 16px; }
+  ul, ol { padding-left: 1.5em; margin-bottom: 16px; }
   li { margin-bottom: 6px; }
+
   blockquote {
-    border-left: 3px solid $color-accent;
+    border-left: 3px solid $color-navy;
     padding-left: 16px;
     color: $color-muted;
     font-style: italic;
@@ -136,8 +187,20 @@ code {
 
 .back-link {
   display: inline-block;
+  font-family: $font-sans;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: $color-muted;
-  font-size: 0.875rem;
+  text-decoration: none;
   margin-bottom: 32px;
-  &:hover { color: $color-text; }
+  &:hover { color: $color-navy; }
+}
+
+// ── Horizontal rule ──────────────────────────────────
+.divider {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 0 32px;
 }
