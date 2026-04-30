@@ -294,6 +294,88 @@
   }
 }
 
+// ── Reading ──────────────────────────────────────────
+.reading-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-entry {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid $color-border;
+
+  &:first-child { border-top: 1px solid $color-border; }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.book-meta {
+  padding-top: 3px;
+}
+
+.book-status {
+  display: inline-block;
+  font-family: $font-sans;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 9px;
+  border-radius: $radius-sm;
+
+  &.reading {
+    background: rgba($color-navy, 0.08);
+    color: $color-navy;
+    border: 1px solid rgba($color-navy, 0.2);
+  }
+
+  &.read {
+    background: $color-surface;
+    color: $color-muted;
+    border: 1px solid $color-border;
+  }
+}
+
+.book-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.book-title {
+  font-family: $font-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: $color-navy;
+  font-style: italic;
+  margin: 0;
+}
+
+.book-author {
+  font-family: $font-sans;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $color-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+}
+
+.book-desc {
+  font-family: $font-sans;
+  font-size: 0.9rem;
+  color: $color-muted;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 580px;
+}
+
 // ── Contact ──────────────────────────────────────────
 .contact-box {
   border: 1px solid $color-border;
