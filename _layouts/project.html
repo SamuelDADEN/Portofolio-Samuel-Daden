@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="page-container">
+  <a href="{{ '/#projects' | relative_url }}" class="back-link">← Back to projects</a>
+
+  <header class="project-header">
+    <span class="project-tag">{{ page.category }}</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="project-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+    <div class="project-meta">
+      {% if page.tools %}
+      <div class="meta-item">
+        <span class="meta-label">Tools</span>
+        <span>{{ page.tools | join: ", " }}</span>
+      </div>
+      {% endif %}
+      {% if page.keywords %}
+      <div class="meta-item">
+        <span class="meta-label">Keywords</span>
+        <span>{{ page.keywords | join: " · " }}</span>
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="project-cover">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <article class="project-body">
+    {{ content }}
+  </article>
+</div>

@@ -1,0 +1,36 @@
+title: Samuel Daden — Portfolio
+description: Aerospace & Mechanical Engineering Portfolio
+author: Samuel Daden
+email: ""
+baseurl: "/Portofolio-Samuel-Daden"
+url: "https://samueldaden.github.io"
+
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle

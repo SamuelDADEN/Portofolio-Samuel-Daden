@@ -1,0 +1,143 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-sans;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover { color: lighten($color-accent, 15%); }
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+img { max-width: 100%; display: block; }
+
+code {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  background: $color-surface;
+  padding: 0.15em 0.4em;
+  border-radius: $radius-sm;
+}
+
+// ── Nav ─────────────────────────────────────────────
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba($color-bg, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+  height: $nav-height;
+}
+
+.nav-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: $color-text;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, $color-accent, $color-accent-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  li a {
+    color: $color-muted;
+    font-size: 0.9rem;
+    font-weight: 500;
+    &:hover { color: $color-text; }
+  }
+}
+
+// ── Footer ──────────────────────────────────────────
+.footer {
+  border-top: 1px solid $color-border;
+  padding: 32px 24px;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-muted;
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  a { color: $color-muted; &:hover { color: $color-text; } }
+}
+
+// ── Generic page ────────────────────────────────────
+.page-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.page-header {
+  margin-bottom: 40px;
+  h1 { font-size: 2.25rem; }
+}
+
+.page-subtitle {
+  margin-top: 12px;
+  color: $color-muted;
+  font-size: 1.05rem;
+}
+
+.page-content {
+  h2 { font-size: 1.4rem; margin: 40px 0 16px; }
+  h3 { font-size: 1.15rem; margin: 28px 0 12px; color: $color-muted; }
+  p  { margin-bottom: 16px; color: $color-text; }
+  ul, ol { padding-left: 1.4em; margin-bottom: 16px; }
+  li { margin-bottom: 6px; }
+  blockquote {
+    border-left: 3px solid $color-accent;
+    padding-left: 16px;
+    color: $color-muted;
+    font-style: italic;
+    margin: 24px 0;
+  }
+}
+
+.back-link {
+  display: inline-block;
+  color: $color-muted;
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+  &:hover { color: $color-text; }
+}

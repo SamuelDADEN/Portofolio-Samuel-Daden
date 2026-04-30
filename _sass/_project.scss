@@ -1,0 +1,121 @@
+// ── Project page ────────────────────────────────────
+.project-header {
+  margin-bottom: 40px;
+
+  .project-tag {
+    display: inline-block;
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $color-accent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+
+  h1 { font-size: 2rem; margin-bottom: 12px; }
+}
+
+.project-subtitle {
+  color: $color-muted;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+
+  .meta-label {
+    font-family: $font-mono;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-muted;
+  }
+}
+
+.project-cover {
+  margin: 32px 0;
+  border-radius: $radius;
+  overflow: hidden;
+  border: 1px solid $color-border;
+  background: $color-surface;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img { width: 100%; }
+
+  .placeholder {
+    color: $color-muted;
+    font-size: 0.875rem;
+    font-style: italic;
+  }
+}
+
+.project-body {
+  h2 {
+    font-size: 1.35rem;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-border;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 28px 0 10px;
+    color: $color-accent;
+    font-weight: 500;
+  }
+
+  p {
+    color: $color-muted;
+    margin-bottom: 18px;
+    line-height: 1.85;
+  }
+
+  ul, ol {
+    padding-left: 1.4em;
+    margin-bottom: 18px;
+    color: $color-muted;
+    li { margin-bottom: 8px; }
+  }
+
+  .highlight-box {
+    background: rgba($color-accent, 0.06);
+    border-left: 3px solid $color-accent;
+    padding: 16px 20px;
+    border-radius: 0 $radius-sm $radius-sm 0;
+    margin: 24px 0;
+    p { margin: 0; color: $color-text; }
+  }
+
+  figure {
+    margin: 32px 0;
+    img {
+      border-radius: $radius-sm;
+      border: 1px solid $color-border;
+    }
+    figcaption {
+      font-size: 0.8rem;
+      color: $color-muted;
+      text-align: center;
+      margin-top: 8px;
+      font-style: italic;
+    }
+  }
+}
