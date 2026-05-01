@@ -6,9 +6,9 @@ icon: "✈️"
 summary: "Developed an optimisation framework to size control surfaces (ailerons, elevators, rudder) while minimising structural weight and aerodynamic drag, subject to handling-quality constraints."
 tools: [Python, MATLAB, Xfoil]
 keywords: [control surfaces, sizing, optimisation, flight mechanics, aerodynamics]
-image: /assets/images/control-surface-sizing.svg
+image: /assets/images/control-surface-sizing.jpeg
 images:
-  - src: /assets/images/control-surface-sizing.svg
+  - src: /assets/images/control-surface-sizing.jpeg
     caption: "Fig. 1 — Feasible region and active constraints"
   - src: /assets/images/control-surface-geometry.svg
     caption: "Fig. 2 — Control surface layout and chord-ratio definition"
@@ -65,7 +65,7 @@ where \\(x\\) collects chord ratios and span fractions for each surface.
 ## Figures
 
 <figure>
-  <img src="{{ '/assets/images/control-surface-sizing.svg' | relative_url }}" alt="Feasible region and active constraints">
+  <img src="{{ '/assets/images/control-surface-sizing.jpeg' | relative_url }}" alt="Feasible region and active constraints">
   <figcaption>Fig. 1 — Feasible region defined by the roll-rate and pitch-authority constraints. The optimal solution (●) minimises total surface area within the feasible region.</figcaption>
 </figure>
 
