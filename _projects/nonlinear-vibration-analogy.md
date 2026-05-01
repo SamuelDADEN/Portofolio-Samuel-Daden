@@ -6,13 +6,13 @@ icon: "〰️"
 summary: "Investigated the mathematical and physical analogy between nonlinear mechanical vibration systems (Duffing oscillator, Van der Pol) and equivalent analogous systems, revealing shared solution structures and enabling cross-domain insight."
 tools: [Python, MATLAB]
 keywords: [nonlinear dynamics, vibrations, analogy, Duffing oscillator, mechanical systems]
-image: /assets/images/duffing-phase.svg
+image: /assets/images/Vib1.jpeg
 images:
-  - src: /assets/images/duffing-phase.svg
+  - src: /assets/images/Vib1.jpeg
     caption: "Fig. 1 — Phase portrait of the Duffing oscillator"
-  - src: /assets/images/duffing-frequency-response.svg
+  - src: /assets/images/Vib2.jpeg
     caption: "Fig. 2 — Nonlinear frequency response (jump phenomenon)"
-  - src: /assets/images/duffing-time-history.svg
+  - src: /assets/images/Vib3.jpeg
     caption: "Fig. 3 — Chaotic time history: displacement and velocity"
 order: 3
 ---
@@ -90,7 +90,7 @@ For each nonlinear mechanical system studied, the **equivalent analogous system*
 ## Figures
 
 <figure>
-  <img src="{{ '/assets/images/duffing-phase.svg' | relative_url }}" alt="Duffing phase portrait">
+  <img src="{{ '/assets/images/Vib1.jpeg' | relative_url }}" alt="Duffing phase portrait">
   <figcaption>Fig. 1 — Phase portrait of the Duffing oscillator in the chaotic regime. The two stable fixed points x₋ and x₊ (●) correspond to the two potential wells. The saddle point at the origin (○) separates their basins of attraction.</figcaption>
 </figure>
 
