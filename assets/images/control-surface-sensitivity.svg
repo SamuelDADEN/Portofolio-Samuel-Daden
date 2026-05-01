@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+  <rect width="900" height="400" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="450" y="28" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Fig. 3 — Normalised sensitivity of constraints to design variables</text>
+
+  <!-- ============================================================
+       Chart area:  left=200 right=800 top=55 bottom=340
+       x-axis: 0.0 → 1.0 mapped to x=200..800  (scale: 600px/unit)
+       y-axis: 5 bars, evenly spaced
+       ============================================================ -->
+
+  <!-- Axis border lines -->
+  <line x1="200" y1="55" x2="200" y2="340" stroke="#d6d2c8" stroke-width="1.5"/>
+  <line x1="200" y1="340" x2="800" y2="340" stroke="#d6d2c8" stroke-width="1.5"/>
+  <line x1="800" y1="55" x2="800" y2="340" stroke="#d6d2c8" stroke-width="1.5"/>
+  <line x1="200" y1="55" x2="800" y2="55" stroke="#d6d2c8" stroke-width="1.5"/>
+
+  <!-- X-axis tick marks and labels (0.0, 0.2, 0.4, 0.6, 0.8, 1.0) -->
+  <!-- x position = 200 + value * 600 -->
+  <g font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="middle">
+    <line x1="200" y1="340" x2="200" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="200" y="358">0.0</text>
+
+    <line x1="320" y1="340" x2="320" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="320" y="358">0.2</text>
+
+    <line x1="440" y1="340" x2="440" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="440" y="358">0.4</text>
+
+    <line x1="560" y1="340" x2="560" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="560" y="358">0.6</text>
+
+    <line x1="680" y1="340" x2="680" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="680" y="358">0.8</text>
+
+    <line x1="800" y1="340" x2="800" y2="346" stroke="#d6d2c8" stroke-width="1.2"/>
+    <text x="800" y="358">1.0</text>
+  </g>
+
+  <!-- X-axis vertical grid lines (light dashed) -->
+  <g stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="320" y1="55" x2="320" y2="340"/>
+    <line x1="440" y1="55" x2="440" y2="340"/>
+    <line x1="560" y1="55" x2="560" y2="340"/>
+    <line x1="680" y1="55" x2="680" y2="340"/>
+  </g>
+
+  <!-- X-axis label -->
+  <text x="500" y="382" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c" text-anchor="middle">Normalised sensitivity index  dA/dx_i</text>
+
+  <!-- ============================================================
+       Bars — bar height=36, gap=20, total row=56
+       5 bars, centre y values:
+         bar1 cy=88,  bar2 cy=144, bar3 cy=200, bar4 cy=256, bar5 cy=312
+       bar top = cy-18, bar bottom = cy+18
+       bar right x = 200 + value*600
+       ============================================================ -->
+
+  <!-- Bar 1: Roll-rate constraint  0.82  navy -->
+  <!-- x_right = 200 + 0.82*600 = 692 -->
+  <rect x="200" y="70" width="492" height="36" fill="#1e3a5f"/>
+  <!-- Value label -->
+  <text x="700" y="93" font-family="Georgia, serif" font-size="11" fill="#1e3a5f" text-anchor="start">0.82</text>
+  <!-- Y-axis label -->
+  <text x="194" y="93" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="end">Roll-rate constraint</text>
+
+  <!-- Bar 2: Pitch authority  0.61  navy -->
+  <!-- x_right = 200 + 0.61*600 = 566 -->
+  <rect x="200" y="126" width="366" height="36" fill="#1e3a5f"/>
+  <text x="574" y="149" font-family="Georgia, serif" font-size="11" fill="#1e3a5f" text-anchor="start">0.61</text>
+  <text x="194" y="149" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="end">Pitch authority</text>
+
+  <!-- Bar 3: Rudder yaw balance  0.44  navy -->
+  <!-- x_right = 200 + 0.44*600 = 464 -->
+  <rect x="200" y="182" width="264" height="36" fill="#1e3a5f"/>
+  <text x="472" y="205" font-family="Georgia, serif" font-size="11" fill="#1e3a5f" text-anchor="start">0.44</text>
+  <text x="194" y="205" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="end">Rudder yaw balance</text>
+
+  <!-- Bar 4: Structural thickness  0.28  muted grey -->
+  <!-- x_right = 200 + 0.28*600 = 368 -->
+  <rect x="200" y="238" width="168" height="36" fill="#5c5c5c"/>
+  <text x="376" y="261" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="start">0.28</text>
+  <text x="194" y="261" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="end">Structural thickness</text>
+
+  <!-- Bar 5: Max deflection angle  0.19  muted grey -->
+  <!-- x_right = 200 + 0.19*600 = 314 -->
+  <rect x="200" y="294" width="114" height="36" fill="#5c5c5c"/>
+  <text x="322" y="317" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="start">0.19</text>
+  <text x="194" y="317" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="end">Max deflection angle</text>
+
+  <!-- ============================================================
+       Active threshold vertical dashed line at x=0.5 → x=500
+       ============================================================ -->
+  <line x1="500" y1="55" x2="500" y2="340"
+        stroke="#8b2c2c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- Threshold label at top -->
+  <text x="502" y="50" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8b2c2c" text-anchor="start">Active threshold</text>
+
+</svg>

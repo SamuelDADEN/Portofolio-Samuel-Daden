@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <defs>
+    <style>
+      text { font-family: Georgia, serif; }
+    </style>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M4,1 L7,7 L4,5 L1,7 Z" fill="#1e3a5f"/>
+    </marker>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M4,7 L7,1 L4,3 L1,1 Z" fill="#1e3a5f"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#1e3a5f">Fig. 2 — Nonlinear frequency response: hardening Duffing oscillator (jump phenomenon)</text>
+
+  <!-- Plot area: left=75, top=55, right=840, bottom=355 => width=765, height=300 -->
+  <!-- X axis: ω/ω₀ from 0.4 to 1.6, scale = 765/1.2 = 637.5 per unit -->
+  <!-- Y axis: A from 0 to 2.0, scale = 300/2.0 = 150 per unit -->
+  <!-- x_px = 75 + (ω - 0.4) * 637.5 -->
+  <!-- y_px = 355 - A * 150 -->
+
+  <!-- Plot border -->
+  <rect x="75" y="55" width="765" height="300" fill="none" stroke="#d6d2c8" stroke-width="1"/>
+
+  <!-- Grid lines (light) -->
+  <!-- Vertical grid at 0.6, 0.8, 1.0, 1.2, 1.4 -->
+  <line x1="202.5" y1="55" x2="202.5" y2="355" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="330" y1="55" x2="330" y2="355" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="457.5" y1="55" x2="457.5" y2="355" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="585" y1="55" x2="585" y2="355" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="712.5" y1="55" x2="712.5" y2="355" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <!-- Horizontal grid at 0.5, 1.0, 1.5 -->
+  <line x1="75" y1="280" x2="840" y2="280" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="75" y1="205" x2="840" y2="205" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="75" y1="130" x2="840" y2="130" stroke="#d6d2c8" stroke-width="0.5" stroke-dasharray="3,4"/>
+
+  <!-- Linear resonance reference at ω/ω₀ = 1.0 -->
+  <!-- x = 75 + (1.0 - 0.4)*637.5 = 75 + 382.5 = 457.5 -->
+  <line x1="457.5" y1="55" x2="457.5" y2="355" stroke="#bfbab0" stroke-width="1.2" stroke-dasharray="6,4"/>
+
+  <!-- ============================================================ -->
+  <!-- STABLE UPPER BRANCH: from (0.6, 0.3) rising to peak (1.35, 1.8) then dropping sharply -->
+  <!-- x_px = 75 + (ω - 0.4)*637.5 -->
+  <!-- y_px = 355 - A*150 -->
+  <!-- Key points:
+       (0.6, 0.30) -> x=202.5, y=310
+       (0.7, 0.38) -> x=265.1, y=298
+       (0.8, 0.52) -> x=330.0, y=277
+       (0.9, 0.75) -> x=394.9, y=242.5
+       (1.0, 1.05) -> x=457.5, y=197.5
+       (1.1, 1.35) -> x=520.1, y=152.5
+       (1.2, 1.60) -> x=585.0, y=115
+       (1.28, 1.76)-> x=636.0, y=91
+       (1.35, 1.80)-> x=686.6, y=85  <-- PEAK
+       then drops sharply
+       (1.38, 1.70)-> x=705.8, y=100
+       (1.42, 1.35)-> x=331.5... wait, x=75+(1.42-0.4)*637.5=75+650.25=725.25, y=355-202.5=152.5
+       (1.44, 0.80)-> x=75+(1.44-0.4)*637.5=75+663=738, y=355-120=235
+       (1.46, 0.42)-> x=75+(1.46-0.4)*637.5=75+675.75=750.75, y=355-63=292
+  -->
+  <path d="
+    M 202.5,310
+    C 233.8,302 265.1,292 297,278
+    C 328.9,264 363,247 394.9,228
+    C 425,210 445,199 457.5,192
+    C 470,185 490,170 520.1,152
+    C 548,136 568,120 601,104
+    C 625,92 648,82 673,79
+    C 686,77.5 692,78 700,82
+    C 710,88 718,100 724,118
+    C 730,138 735,165 740,200
+    C 745,230 749,265 752,292
+  " fill="none" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- ============================================================ -->
+  <!-- STABLE LOWER BRANCH: from (0.6, 0.15) rising gently to ~(1.55, 0.55) -->
+  <!-- Key points:
+       (0.6, 0.15) -> x=202.5, y=332.5
+       (0.7, 0.18) -> x=265.1, y=328
+       (0.8, 0.22) -> x=330.0, y=322
+       (0.9, 0.27) -> x=394.9, y=314.5
+       (1.0, 0.32) -> x=457.5, y=307
+       (1.1, 0.38) -> x=520.1, y=298
+       (1.2, 0.44) -> x=585.0, y=289
+       (1.3, 0.48) -> x=649.9, y=283
+       (1.4, 0.52) -> x=712.5, y=277
+       (1.5, 0.56) -> x=777.4, y=271
+       (1.55, 0.58)-> x=809.6, y=268
+       (1.6, 0.60) -> x=840.0, y=265
+  -->
+  <path d="
+    M 202.5,332.5
+    C 233.8,330 265.1,326 297,322
+    C 330,318 363,314 394.9,309
+    C 426,304 445,300 457.5,297
+    C 476,293 498,289 520.1,284
+    C 548,279 568,275 600,271
+    C 625,268 648,265 675,262
+    C 700,259 720,257 750,254
+    C 775,251 810,249 840,247
+  " fill="none" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- ============================================================ -->
+  <!-- UNSTABLE BRANCH: dashed red, connecting upper branch drop to lower branch -->
+  <!-- Connects roughly from (1.42, 1.0) down-right to (1.46, 0.42) region, linking the two stable branches -->
+  <!-- More precisely: upper branch at x~725, y~152 down to lower branch at x~752, y~292 -->
+  <!-- But the unstable branch connects the FOLD points:
+       upper fold ~ (1.42, 1.35) at upper branch
+       lower fold ~ (1.07, 0.38) at lower branch turning point area
+       Actually for hardening Duffing: unstable goes from upper turn (high freq, high amp) back left to lower turn (lower freq, lower amp)
+       Upper turning point: ~(1.42, 0.8) -> x=725, y=235 (on the falling part)
+       Lower turning point: ~(1.07, 0.38) -> x=75+(1.07-0.4)*637.5=75+426.9=501.9, y=355-57=298
+       The unstable branch goes from upper turning pt back to lower turning pt
+  -->
+  <!-- Upper fold point (jump down): ω~1.43, A~0.78 -> x=75+(1.43-0.4)*637.5=75+656.6=731.6, y=355-117=238 -->
+  <!-- Lower fold point (jump up): ω~1.07, A~0.37 -> x=75+(1.07-0.4)*637.5=75+426.9=501.9, y=355-55.5=299.5 -->
+  <!-- Unstable branch curves between these two fold points -->
+  <path d="
+    M 501.9,299.5
+    C 530,285 560,265 590,243
+    C 620,221 655,220 680,225
+    C 705,230 720,233 731.6,238
+  " fill="none" stroke="#8b2c2c" stroke-width="1.8" stroke-dasharray="7,4"/>
+
+  <!-- ============================================================ -->
+  <!-- JUMP UP ARROW at lower fold point ω~1.07 -->
+  <!-- Lower fold: x=501.9, A goes from ~0.37 (lower branch) to ~1.35 (upper branch) -->
+  <!-- Arrow from y=299 up to y=152 -->
+  <line x1="501.9" y1="299.5" x2="501.9" y2="162" stroke="#1e3a5f" stroke-width="1.4" marker-end="url(#arrowUp)"/>
+  <text x="510" y="230" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#1e3a5f">Jump up</text>
+
+  <!-- JUMP DOWN ARROW at upper fold point ω~1.43 -->
+  <!-- From upper branch y~238 down to lower branch y~277 -->
+  <line x1="731.6" y1="238" x2="731.6" y2="265" stroke="#1e3a5f" stroke-width="1.4" marker-end="url(#arrowDown)"/>
+  <text x="736" y="254" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#1e3a5f">Jump down</text>
+
+  <!-- ============================================================ -->
+  <!-- AXES -->
+  <!-- X axis (bottom) -->
+  <line x1="75" y1="355" x2="840" y2="355" stroke="#d6d2c8" stroke-width="1.5"/>
+  <!-- Y axis (left) -->
+  <line x1="75" y1="55" x2="75" y2="355" stroke="#d6d2c8" stroke-width="1.5"/>
+
+  <!-- X axis ticks and labels -->
+  <!-- ω = 0.4 -> x=75, 0.6->202.5, 0.8->330, 1.0->457.5, 1.2->585, 1.4->712.5, 1.6->840 -->
+  <line x1="75" y1="355" x2="75" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="75" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0.4</text>
+
+  <line x1="202.5" y1="355" x2="202.5" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="202.5" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0.6</text>
+
+  <line x1="330" y1="355" x2="330" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="330" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0.8</text>
+
+  <line x1="457.5" y1="355" x2="457.5" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="457.5" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.0</text>
+
+  <line x1="585" y1="355" x2="585" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="585" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.2</text>
+
+  <line x1="712.5" y1="355" x2="712.5" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="712.5" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.4</text>
+
+  <line x1="840" y1="355" x2="840" y2="361" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="840" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.6</text>
+
+  <!-- Y axis ticks and labels -->
+  <!-- A = 0 -> y=355, 0.5->280, 1.0->205, 1.5->130, 2.0->55 -->
+  <line x1="75" y1="355" x2="69" y2="355" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="62" y="359" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0.0</text>
+
+  <line x1="75" y1="280" x2="69" y2="280" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="62" y="284" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0.5</text>
+
+  <line x1="75" y1="205" x2="69" y2="205" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="62" y="209" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.0</text>
+
+  <line x1="75" y1="130" x2="69" y2="130" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="62" y="134" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">1.5</text>
+
+  <line x1="75" y1="55" x2="69" y2="55" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="62" y="59" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">2.0</text>
+
+  <!-- Axis labels -->
+  <!-- X label -->
+  <text x="457.5" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c">ω / ω₀</text>
+  <!-- Y label (rotated) -->
+  <text x="20" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c" transform="rotate(-90, 20, 205)">Amplitude A</text>
+
+  <!-- ============================================================ -->
+  <!-- LEGEND -->
+  <rect x="82" y="62" width="210" height="78" fill="#faf9f6" stroke="#d6d2c8" stroke-width="0.8" rx="2"/>
+  <!-- Stable branch -->
+  <line x1="92" y1="79" x2="122" y2="79" stroke="#1e3a5f" stroke-width="2.2"/>
+  <text x="128" y="83" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Stable branch</text>
+  <!-- Unstable branch -->
+  <line x1="92" y1="100" x2="122" y2="100" stroke="#8b2c2c" stroke-width="1.8" stroke-dasharray="7,4"/>
+  <text x="128" y="104" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Unstable branch</text>
+  <!-- Linear resonance -->
+  <line x1="92" y1="121" x2="122" y2="121" stroke="#bfbab0" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <text x="128" y="125" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Linear resonance (ω/ω₀ = 1)</text>
+</svg>

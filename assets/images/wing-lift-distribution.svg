@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      text { font-family: Georgia, serif; }
+      .title   { font-size: 14px; font-weight: bold; fill: #1e3a5f; }
+      .axis-label { font-size: 13px; font-style: italic; fill: #5c5c5c; }
+      .tick-label { font-size: 11px; fill: #5c5c5c; font-family: Georgia, serif; }
+      .legend-text { font-size: 11px; fill: #3a3a3a; font-family: Georgia, serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#faf9f6"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="898" height="398" fill="none" stroke="#d6d2c8" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Fig. 3 — Spanwise lift distribution: elliptic ideal vs. baseline vs. optimised</text>
+
+  <!--
+    Plot area:
+      left=90, right=820, top=55, bottom=320
+      width=730, height=265
+    X: eta 0 to 1.0  -> px = 90 + eta*730
+    Y: cl_c/(CL_b) 0 to 1.2 -> py = 320 - (val/1.2)*265
+  -->
+
+  <!-- Plot area background -->
+  <rect x="90" y="55" width="730" height="265" fill="#faf9f6" stroke="#d6d2c8" stroke-width="1"/>
+
+  <!-- Grid lines (horizontal, light) -->
+  <!-- Y ticks: 0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2 -->
+  <!-- py = 320 - (val/1.2)*265 -->
+  <!-- val=0   -> py=320  -->
+  <!-- val=0.2 -> py=276  -->
+  <!-- val=0.4 -> py=232  -->
+  <!-- val=0.6 -> py=188  -->
+  <!-- val=0.8 -> py=144  -->
+  <!-- val=1.0 -> py=100  -->
+  <!-- val=1.2 -> py=55   (but this is the axis top) -->
+
+  <line x1="90" y1="276" x2="820" y2="276" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="90" y1="232" x2="820" y2="232" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="90" y1="188" x2="820" y2="188" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="90" y1="144" x2="820" y2="144" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="90" y1="100" x2="820" y2="100" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="90" y1="55"  x2="820" y2="55"  stroke="#d6d2c8" stroke-width="0.6"/>
+
+  <!-- Vertical grid lines at eta = 0.2, 0.4, 0.6, 0.8 -->
+  <!-- px = 90 + eta*730 -->
+  <!-- eta=0.2 -> 236, 0.4->382, 0.6->528, 0.8->674 -->
+  <line x1="236" y1="55" x2="236" y2="320" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="382" y1="55" x2="382" y2="320" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="528" y1="55" x2="528" y2="320" stroke="#d6d2c8" stroke-width="0.6"/>
+  <line x1="674" y1="55" x2="674" y2="320" stroke="#d6d2c8" stroke-width="0.6"/>
+
+  <!-- Y axis ticks and labels -->
+  <line x1="85" y1="320" x2="90" y2="320" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="324" text-anchor="end" class="tick-label">0</text>
+
+  <line x1="85" y1="276" x2="90" y2="276" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="280" text-anchor="end" class="tick-label">0.2</text>
+
+  <line x1="85" y1="232" x2="90" y2="232" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="236" text-anchor="end" class="tick-label">0.4</text>
+
+  <line x1="85" y1="188" x2="90" y2="188" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="192" text-anchor="end" class="tick-label">0.6</text>
+
+  <line x1="85" y1="144" x2="90" y2="144" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="148" text-anchor="end" class="tick-label">0.8</text>
+
+  <line x1="85" y1="100" x2="90" y2="100" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="104" text-anchor="end" class="tick-label">1.0</text>
+
+  <line x1="85" y1="55" x2="90" y2="55" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="80" y="59" text-anchor="end" class="tick-label">1.2</text>
+
+  <!-- X axis ticks and labels -->
+  <line x1="90"  y1="320" x2="90"  y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="90"  y="337" text-anchor="middle" class="tick-label">0</text>
+
+  <line x1="236" y1="320" x2="236" y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="236" y="337" text-anchor="middle" class="tick-label">0.2</text>
+
+  <line x1="382" y1="320" x2="382" y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="382" y="337" text-anchor="middle" class="tick-label">0.4</text>
+
+  <line x1="528" y1="320" x2="528" y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="528" y="337" text-anchor="middle" class="tick-label">0.6</text>
+
+  <line x1="674" y1="320" x2="674" y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="674" y="337" text-anchor="middle" class="tick-label">0.8</text>
+
+  <line x1="820" y1="320" x2="820" y2="325" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="820" y="337" text-anchor="middle" class="tick-label">1.0</text>
+
+  <!-- Axis labels -->
+  <!-- X axis label -->
+  <text x="455" y="358" text-anchor="middle" class="axis-label">η = 2y/b (spanwise station)</text>
+
+  <!-- Y axis label -->
+  <text x="22" y="190" text-anchor="middle" class="axis-label"
+        transform="rotate(-90 22 190)">c&#x2113; · c / (C&#x2097; · b)</text>
+
+  <!--
+    Curve data points (px, py):
+
+    ELLIPTIC: val = sqrt(1 - eta^2) * (4/pi) normalised so peak=1.0
+    Actually standard elliptic: cl_c/(CL_b) = (4/pi)*sqrt(1 - eta^2)
+    Peak at eta=0: 4/pi ~ 1.273 -> normalise so peak appears reasonable
+    We'll use: elliptic_val(eta) = sqrt(1 - eta^2)
+    This gives peak=1.0 at eta=0, drops to 0 at eta=1
+    But the spec says Y axis goes to 1.2 — let's scale elliptic to have peak=1.0
+    (already done: sqrt(1-0)=1.0)
+
+    Points: eta = 0, 0.1, 0.2, ..., 1.0
+    eta=0: sqrt(1)=1.000  -> py=320-(1.0/1.2)*265=320-220.8=99.2  ~ 99
+    eta=0.1: sqrt(0.99)=0.995 -> 320-219.6=100.4 ~ 100
+    eta=0.2: sqrt(0.96)=0.980 -> 320-216.3=103.7 ~ 104
+    eta=0.3: sqrt(0.91)=0.954 -> 320-210.7=109.3 ~ 109
+    eta=0.4: sqrt(0.84)=0.917 -> 320-202.5=117.5 ~ 118
+    eta=0.5: sqrt(0.75)=0.866 -> 320-191.2=128.8 ~ 129
+    eta=0.6: sqrt(0.64)=0.800 -> 320-176.7=143.3 ~ 143
+    eta=0.7: sqrt(0.51)=0.714 -> 320-157.9=162.1 ~ 162
+    eta=0.8: sqrt(0.36)=0.600 -> 320-132.5=187.5 ~ 188 (well, 320-(0.6/1.2)*265=320-132.5=187.5)
+    eta=0.9: sqrt(0.19)=0.436 -> 320-96.2=223.8 ~ 224
+    eta=1.0: 0.000 -> py=320
+
+    px = 90 + eta*730:
+    0:90, 0.1:163, 0.2:236, 0.3:309, 0.4:382, 0.5:455, 0.6:528, 0.7:601, 0.8:674, 0.9:747, 1.0:820
+
+    BASELINE RECTANGULAR:
+    Flat at val=0.785 (=pi/4 normalised to match CL, let's use 0.80) for eta 0..0.9
+    then drops sharply at tip
+    eta=0: 0.80 -> py=320-(0.8/1.2)*265=320-176.7=143.3~143
+    eta=0.9: 0.80 -> py=143
+    eta=0.95: 0.50 -> 320-110.4=209.6~210
+    eta=1.0: 0.0 -> py=320
+    px(0.95)=90+0.95*730=783.5~784
+
+    OPTIMISED (near-elliptic):
+    Slightly above elliptic near root, tracks very close, slight deviation
+    eta=0: 1.00 -> py=99
+    eta=0.1: 1.00 -> py=99  (slightly higher than elliptic near root-ish)
+    eta=0.2: 0.985 -> py=320-(0.985/1.2)*265=320-217.5=102.5~103
+    eta=0.3: 0.960 -> py=320-212.0=108
+    eta=0.4: 0.925 -> py=320-204.2=115.8~116
+    eta=0.5: 0.878 -> py=320-193.9=126.1~126
+    eta=0.6: 0.812 -> py=320-179.4=140.6~141
+    eta=0.7: 0.724 -> py=320-159.9=160.1~160
+    eta=0.8: 0.610 -> py=320-134.7=185.3~185
+    eta=0.9: 0.448 -> py=320-98.9=221.1~221
+    eta=1.0: 0.05 -> py=320-(0.05/1.2)*265=320-11.0=309
+  -->
+
+  <!-- SHADED AREA between optimised and elliptic -->
+  <!-- Polygon: optimised forward, then elliptic reverse -->
+  <!-- optimised points: 90,99 163,99 236,103 309,108 382,116 455,126 528,141 601,160 674,185 747,221 820,309 -->
+  <!-- elliptic points reversed: 820,320 747,224 674,188 601,162 528,143 455,129 382,118 309,109 236,104 163,100 90,99 -->
+  <polygon
+    points="90,99 163,99 236,103 309,108 382,116 455,126 528,141 601,160 674,185 747,221 820,309
+            820,320 747,224 674,188 601,162 528,143 455,129 382,118 309,109 236,104 163,100 90,99"
+    fill="rgba(30,58,95,0.05)" stroke="none"/>
+
+  <!-- ELLIPTIC curve: dashed #8b2c2c -->
+  <polyline
+    points="90,99 163,100 236,104 309,109 382,118 455,129 528,143 601,162 674,188 747,224 820,320"
+    fill="none" stroke="#8b2c2c" stroke-width="2" stroke-dasharray="9,5"/>
+
+  <!-- BASELINE RECTANGULAR: dashed #bfbab0 -->
+  <!-- Flat region then drop -->
+  <polyline
+    points="90,143 163,143 236,143 309,143 382,143 455,143 528,143 601,143 674,143 747,143 784,143 784,210 820,320"
+    fill="none" stroke="#bfbab0" stroke-width="2" stroke-dasharray="8,5"/>
+
+  <!-- OPTIMISED curve: solid #1e3a5f -->
+  <polyline
+    points="90,99 163,99 236,103 309,108 382,116 455,126 528,141 601,160 674,185 747,221 820,309"
+    fill="none" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- Legend box -->
+  <rect x="90" y="330" width="630" height="32" fill="#faf9f6" stroke="#d6d2c8" stroke-width="1" rx="3"/>
+
+  <!-- Elliptic legend -->
+  <line x1="105" y1="346" x2="145" y2="346" stroke="#8b2c2c" stroke-width="2" stroke-dasharray="9,5"/>
+  <text x="152" y="350" class="legend-text">Elliptic ideal</text>
+
+  <!-- Baseline legend -->
+  <line x1="260" y1="346" x2="300" y2="346" stroke="#bfbab0" stroke-width="2" stroke-dasharray="8,5"/>
+  <text x="307" y="350" class="legend-text">Baseline (rectangular)</text>
+
+  <!-- Optimised legend -->
+  <line x1="468" y1="346" x2="508" y2="346" stroke="#1e3a5f" stroke-width="2.2"/>
+  <text x="515" y="350" class="legend-text">Optimised (near-elliptic)</text>
+
+  <!-- Shade swatch in legend -->
+  <rect x="668" y="338" width="20" height="16" fill="rgba(30,58,95,0.10)" stroke="#1e3a5f" stroke-width="0.8" rx="2"/>
+  <text x="695" y="350" class="legend-text">Deviation region</text>
+
+</svg>

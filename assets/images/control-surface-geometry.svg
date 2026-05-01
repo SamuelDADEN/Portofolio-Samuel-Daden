@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="450" y="28" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Fig. 2 — Control surface layout and chord-ratio definition</text>
+
+  <!-- ============================================================
+       Aircraft top-view planform, centred at (450, 215)
+       Fuselage + swept wing + horizontal stabiliser + vertical fin hint
+       ============================================================ -->
+
+  <!-- Fuselage outline -->
+  <ellipse cx="450" cy="215" rx="22" ry="150" fill="#faf9f6" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Left wing (swept, tapered) -->
+  <!-- Root leading edge ~(428,130) → tip leading edge ~(160,175)
+       Root trailing edge ~(428,200) → tip trailing edge ~(175,205) -->
+  <polygon points="428,130 160,170 165,210 428,205"
+           fill="#faf9f6" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Right wing -->
+  <polygon points="472,130 740,170 735,210 472,205"
+           fill="#faf9f6" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Left horizontal stabiliser -->
+  <polygon points="432,308 280,330 282,352 432,342"
+           fill="#faf9f6" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Right horizontal stabiliser -->
+  <polygon points="468,308 620,330 618,352 468,342"
+           fill="#faf9f6" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Vertical fin (side-view hint, shown as narrow polygon above fuselage nose) -->
+  <polygon points="440,80 460,80 455,130 445,130"
+           fill="#5c5c5c" fill-opacity="0.15" stroke="#5c5c5c" stroke-width="1.4"/>
+
+  <!-- ============================================================
+       Control surfaces — highlighted overlays
+       ============================================================ -->
+
+  <!-- Left aileron (outer ~55%–95% span of left wing) -->
+  <!-- Outer strip along the trailing edge of left wing -->
+  <polygon points="195,175 248,173 252,207 198,208"
+           fill="#1e3a5f" fill-opacity="0.15" stroke="#1e3a5f" stroke-width="1.6"/>
+
+  <!-- Right aileron -->
+  <polygon points="705,175 652,173 648,207 702,208"
+           fill="#1e3a5f" fill-opacity="0.15" stroke="#1e3a5f" stroke-width="1.6"/>
+
+  <!-- Elevator (rear strip of horizontal stabiliser, both sides) -->
+  <polygon points="282,342 432,342 432,352 280,352"
+           fill="#8b2c2c" fill-opacity="0.15" stroke="#8b2c2c" stroke-width="1.6"/>
+  <polygon points="468,342 618,342 618,352 468,352"
+           fill="#8b2c2c" fill-opacity="0.15" stroke="#8b2c2c" stroke-width="1.6"/>
+
+  <!-- Rudder (rear portion of vertical fin) -->
+  <polygon points="444,100 456,100 454,130 446,130"
+           fill="#5c5c5c" fill-opacity="0.15" stroke="#5c5c5c" stroke-width="1.4"/>
+
+  <!-- ============================================================
+       Dimension arrows + labels
+       ============================================================ -->
+
+  <!-- Aileron label — left side -->
+  <!-- Leader line from left aileron up-left to label -->
+  <line x1="222" y1="175" x2="130" y2="120" stroke="#1e3a5f" stroke-width="1.2"/>
+  <circle cx="222" cy="175" r="2.5" fill="#1e3a5f"/>
+  <text x="126" y="113" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#1e3a5f" text-anchor="middle">Aileron</text>
+  <text x="126" y="127" font-family="Georgia, serif" font-size="10" fill="#5c5c5c" text-anchor="middle">(both sides)</text>
+
+  <!-- Aileron span arrow (left wing) showing outer strip extent -->
+  <line x1="195" y1="220" x2="252" y2="220" stroke="#1e3a5f" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <!-- Elevator label -->
+  <line x1="357" y1="352" x2="357" y2="385" stroke="#8b2c2c" stroke-width="1.2"/>
+  <circle cx="357" cy="352" r="2.5" fill="#8b2c2c"/>
+  <text x="357" y="399" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8b2c2c" text-anchor="middle">Elevator</text>
+
+  <!-- Rudder label -->
+  <line x1="456" y1="108" x2="530" y2="75" stroke="#5c5c5c" stroke-width="1.2"/>
+  <circle cx="456" cy="108" r="2.5" fill="#5c5c5c"/>
+  <text x="538" y="72" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#5c5c5c" text-anchor="start">Rudder</text>
+  <text x="538" y="86" font-family="Georgia, serif" font-size="10" fill="#5c5c5c" text-anchor="start">(fin, side view)</text>
+
+  <!-- ============================================================
+       Chord-ratio definition annotation (right wing)
+       ============================================================ -->
+  <!-- Wing chord bracket at mid-span of right wing (~x=590) -->
+  <!-- Leading edge at ~y=172, trailing edge at ~y=209 -->
+  <line x1="608" y1="172" x2="622" y2="172" stroke="#5c5c5c" stroke-width="1"/>
+  <line x1="608" y1="209" x2="622" y2="209" stroke="#5c5c5c" stroke-width="1"/>
+  <line x1="615" y1="172" x2="615" y2="209" stroke="#5c5c5c" stroke-width="1"
+        marker-start="url(#arrowGrey)" marker-end="url(#arrowGrey)"/>
+  <text x="624" y="194" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#5c5c5c" text-anchor="start">c</text>
+
+  <!-- Chord-ratio label for right aileron strip depth -->
+  <line x1="648" y1="172" x2="660" y2="172" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="648" y1="209" x2="660" y2="209" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="654" y1="172" x2="654" y2="209" stroke="#1e3a5f" stroke-width="1"
+        marker-start="url(#arrowNavy)" marker-end="url(#arrowNavy)"/>
+  <text x="662" y="194" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#1e3a5f" text-anchor="start">c_f</text>
+
+  <!-- Ratio annotation -->
+  <text x="700" y="194" font-family="Georgia, serif" font-size="11" fill="#5c5c5c" text-anchor="start">← c_f / c ratio</text>
+
+  <!-- ============================================================
+       Legend box
+       ============================================================ -->
+  <rect x="30" y="340" width="200" height="68" fill="#faf9f6" stroke="#d6d2c8" stroke-width="1"/>
+  <rect x="42" y="354" width="24" height="10" fill="#1e3a5f" fill-opacity="0.15" stroke="#1e3a5f" stroke-width="1.4"/>
+  <text x="74" y="363" font-family="Georgia, serif" font-size="11" fill="#1e3a5f">Aileron</text>
+  <rect x="42" y="372" width="24" height="10" fill="#8b2c2c" fill-opacity="0.15" stroke="#8b2c2c" stroke-width="1.4"/>
+  <text x="74" y="381" font-family="Georgia, serif" font-size="11" fill="#8b2c2c">Elevator</text>
+  <rect x="42" y="390" width="24" height="10" fill="#5c5c5c" fill-opacity="0.15" stroke="#5c5c5c" stroke-width="1.4"/>
+  <text x="74" y="399" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Rudder</text>
+
+  <!-- Arrowhead marker definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1e3a5f"/>
+    </marker>
+    <marker id="arrowGrey" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#5c5c5c"/>
+    </marker>
+    <marker id="arrowNavy" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1e3a5f"/>
+    </marker>
+  </defs>
+</svg>
