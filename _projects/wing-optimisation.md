@@ -7,6 +7,13 @@ summary: "Optimised wing planform and airfoil shape to maximise the lift-to-drag
 tools: [OpenVSP, Xfoil, Python]
 keywords: [wing optimisation, aerodynamics, lift-to-drag, airfoil, OpenVSP, Xfoil]
 image: /assets/images/wing-polar.svg
+images:
+  - src: /assets/images/wing-polar.svg
+    caption: "Fig. 1 — Drag polar: baseline vs. optimised wing"
+  - src: /assets/images/wing-planform.svg
+    caption: "Fig. 2 — Planform comparison: baseline vs. optimised"
+  - src: /assets/images/wing-lift-distribution.svg
+    caption: "Fig. 3 — Spanwise lift distribution"
 order: 2
 ---
 

@@ -7,6 +7,13 @@ summary: "Investigated the mathematical and physical analogy between nonlinear m
 tools: [Python, MATLAB]
 keywords: [nonlinear dynamics, vibrations, analogy, Duffing oscillator, mechanical systems]
 image: /assets/images/duffing-phase.svg
+images:
+  - src: /assets/images/duffing-phase.svg
+    caption: "Fig. 1 — Phase portrait of the Duffing oscillator"
+  - src: /assets/images/duffing-frequency-response.svg
+    caption: "Fig. 2 — Nonlinear frequency response (jump phenomenon)"
+  - src: /assets/images/duffing-time-history.svg
+    caption: "Fig. 3 — Chaotic time history: displacement and velocity"
 order: 3
 ---
 

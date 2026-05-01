@@ -219,34 +219,13 @@
 .project-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
   gap: 0 20px;
   padding: 24px 0;
   border-bottom: 1px solid $color-border;
-  text-decoration: none;
   color: inherit;
-  transition: background 0.15s;
 
   &:first-child { border-top: 1px solid $color-border; }
-
-  &:hover {
-    .card-title { color: $color-accent-2; }
-    text-decoration: none;
-  }
-}
-
-.card-thumb {
-  grid-column: 2;
-  margin-top: 16px;
-  border: 1px solid $color-border;
-  background: $color-surface;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  &:hover .card-title { color: $color-accent-2; }
 }
 
 .card-num {
@@ -271,7 +250,87 @@
   font-size: 1.05rem;
   font-weight: 700;
   color: $color-navy;
+  text-decoration: none;
   transition: color 0.15s;
+  &:hover { color: $color-accent-2; text-decoration: none; }
+}
+
+// ── Carousel ─────────────────────────────────────────
+.carousel {
+  grid-column: 2;
+  margin-top: 20px;
+  position: relative;
+  border: 1px solid $color-border;
+  background: $color-surface;
+  user-select: none;
+}
+
+.carousel-track {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  &.active { display: block; }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($color-bg, 0.88);
+  border: 1px solid $color-border;
+  color: $color-navy;
+  font-size: 1.1rem;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.15s, color 0.15s;
+  padding: 0;
+
+  &:hover {
+    background: $color-navy;
+    color: $color-bg;
+    border-color: $color-navy;
+  }
+}
+
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0 8px;
+  background: $color-surface;
+  border-top: 1px solid $color-border;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $color-border;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: none;
+  padding: 0;
+
+  &.active { background: $color-navy; }
+  &:hover  { background: $color-muted; }
 }
 
 .card-tag {

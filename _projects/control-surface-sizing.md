@@ -7,6 +7,13 @@ summary: "Developed an optimisation framework to size control surfaces (ailerons
 tools: [Python, MATLAB, Xfoil]
 keywords: [control surfaces, sizing, optimisation, flight mechanics, aerodynamics]
 image: /assets/images/control-surface-sizing.svg
+images:
+  - src: /assets/images/control-surface-sizing.svg
+    caption: "Fig. 1 — Feasible region and active constraints"
+  - src: /assets/images/control-surface-geometry.svg
+    caption: "Fig. 2 — Control surface layout and chord-ratio definition"
+  - src: /assets/images/control-surface-sensitivity.svg
+    caption: "Fig. 3 — Normalised sensitivity of constraints to design variables"
 order: 1
 ---
 
