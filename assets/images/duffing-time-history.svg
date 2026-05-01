@@ -1,35 +1,253 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
-  <rect width="900" height="420" fill="#faf9f6"/>
-  <line x1="70" y1="30" x2="70" y2="185" stroke="#d6d2c8" stroke-width="1"/>
-  <line x1="70" y1="185" x2="860" y2="185" stroke="#d6d2c8" stroke-width="1"/>
-  <line x1="70" y1="108" x2="860" y2="108" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4"/>
-  <line x1="70" y1="55"  x2="860" y2="55"  stroke="#bfbab0" stroke-width="1" stroke-dasharray="3,5"/>
-  <line x1="70" y1="162" x2="860" y2="162" stroke="#bfbab0" stroke-width="1" stroke-dasharray="3,5"/>
-  <text x="866" y="58"  font-family="Georgia,serif" font-size="10" fill="#bfbab0" dominant-baseline="middle">x+</text>
-  <text x="866" y="165" font-family="Georgia,serif" font-size="10" fill="#bfbab0" dominant-baseline="middle">x-</text>
-  <text x="20" y="108" font-family="Georgia,serif" font-size="13" fill="#5c5c5c" text-anchor="middle" transform="rotate(-90,20,108)" font-style="italic">x(t)</text>
-  <text x="62" y="58"  font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">+1</text>
-  <text x="62" y="108" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">0</text>
-  <text x="62" y="165" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">-1</text>
-  <polyline fill="none" stroke="#1e3a5f" stroke-width="1.6" points="70,62 84,50 98,55 112,68 126,58 140,47 154,52 168,162 182,170 196,158 210,165 224,155 238,170 252,160 266,52 280,44 294,58 308,50 322,62 336,55 350,165 364,158 378,168 392,158 406,170 420,60 434,50 448,57 462,160 476,168 490,155 504,165 518,50 532,44 546,55 560,165 574,158 588,170 602,160 616,52 630,44 644,55 658,50 672,60 686,160 700,170 714,158 728,165 742,52 756,48 770,58 784,165 798,158 812,168 826,158 840,50 854,44"/>
-  <line x1="70" y1="225" x2="70" y2="385" stroke="#d6d2c8" stroke-width="1"/>
-  <line x1="70" y1="385" x2="860" y2="385" stroke="#d6d2c8" stroke-width="1"/>
-  <line x1="70" y1="305" x2="860" y2="305" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,4"/>
-  <text x="20" y="305" font-family="Georgia,serif" font-size="13" fill="#5c5c5c" text-anchor="middle" transform="rotate(-90,20,305)" font-style="italic">dx/dt</text>
-  <text x="62" y="245" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">+2</text>
-  <text x="62" y="305" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">0</text>
-  <text x="62" y="368" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="end" dominant-baseline="middle">-2</text>
-  <polyline fill="none" stroke="#8b2c2c" stroke-width="1.6" points="70,305 84,260 98,295 112,340 126,280 140,250 154,310 168,305 182,355 196,300 210,265 224,350 238,300 252,260 266,305 280,250 294,285 308,355 322,300 336,260 350,305 364,355 378,295 392,260 406,340 420,300 434,252 448,310 462,305 476,360 490,295 504,258 518,305 532,252 546,290 560,305 574,358 588,296 602,258 616,305 630,248 644,292 658,355 672,298 686,305 700,360 714,295 728,258 742,305 756,250 770,288 784,305 798,358 812,294 826,260 840,305 854,248"/>
-  <text x="70"  y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">0</text>
-  <text x="228" y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">10</text>
-  <text x="386" y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">20</text>
-  <text x="544" y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">30</text>
-  <text x="702" y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">40</text>
-  <text x="860" y="400" font-family="Georgia,serif" font-size="10" fill="#5c5c5c" text-anchor="middle">50</text>
-  <text x="465" y="416" font-family="Georgia,serif" font-size="13" fill="#5c5c5c" text-anchor="middle" font-style="italic">Time  t / T</text>
-  <line x1="680" y1="38" x2="710" y2="38" stroke="#1e3a5f" stroke-width="2"/>
-  <text x="716" y="42" font-family="Georgia,serif" font-size="11" fill="#5c5c5c">x(t) displacement</text>
-  <line x1="680" y1="56" x2="710" y2="56" stroke="#8b2c2c" stroke-width="2"/>
-  <text x="716" y="60" font-family="Georgia,serif" font-size="11" fill="#5c5c5c">dx/dt velocity</text>
-  <text x="450" y="14" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Fig. 3 - Chaotic time history: displacement and velocity</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+  <defs>
+    <style>text { font-family: Georgia, serif; }</style>
+    <clipPath id="clipTop">
+      <rect x="75" y="48" width="790" height="140"/>
+    </clipPath>
+    <clipPath id="clipBot">
+      <rect x="75" y="210" width="790" height="140"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="450" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#1e3a5f">Fig. 3 — Chaotic time history: displacement and velocity of the Duffing oscillator</text>
+
+  <!-- Top subplot border: top=48, bottom=188, left=75, right=865 -->
+  <rect x="75" y="48" width="790" height="140" fill="none" stroke="#d6d2c8" stroke-width="1"/>
+
+  <!-- Top subplot zero line -->
+  <line x1="75" y1="118" x2="865" y2="118" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Well lines at x=+1 and x=-1 -->
+  <line x1="75" y1="74" x2="865" y2="74" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="75" y1="162" x2="865" y2="162" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- Well labels inside the top subplot -->
+  <text x="78" y="71" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#5c5c5c">Well x&#x208A;</text>
+  <text x="78" y="177" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#5c5c5c">Well x&#x208B;</text>
+
+  <!-- Chaotic displacement x(t): navy, switching between +1 and -1 wells -->
+  <path clip-path="url(#clipTop)" d="
+    M 75,74.25
+    C 78,55 82,48 84.5,48
+    C 87,48 90,80 94,83
+    C 97,86 101,52 105,52.25
+    C 109,53 112,84 116,87.25
+    C 119,90 122,57 125.6,56.5
+    C 130,56 133,89 136.6,91.75
+    C 140,94 143,59 146.1,59.125
+    C 150,59 153,91 157.2,93.9375
+    C 161,97 164,62 166.6,61.25
+    C 170,60 173,93 177.7,96.25
+    C 181,99 185,66 187.2,65.5
+    C 190,65 193,95 198.2,98.1875
+    C 202,101 206,68 209.3,67.6875
+    C 213,68 216,102 220.4,104.875
+    C 224,107 228,71 231.4,70
+    C 235,69 238,107 242.5,109.25
+    C 246,111 249,79 252,78.5
+    C 256,78 260,111 264.6,113.625
+    C 268,115 272,88 275.7,87.25
+    C 279,87 282,119 285.1,122.375
+    C 287,124 290,106 292.9,104.875
+    C 296,104 300,132 304,135.5
+    C 308,139 312,150 315,153
+    C 318,156 322,177 326.2,179.25
+    C 330,181 333,146 335.7,144.25
+    C 339,142 343,181 346.8,183.625
+    C 350,185 354,150 357.8,148.625
+    C 361,147 364,186 367.3,188
+    C 370,189 374,148 378.4,146.4375
+    C 382,145 385,184 389.4,185.8125
+    C 393,187 396,150 400.5,148.625
+    C 404,147 407,182 411.5,183.625
+    C 415,185 418,155 422.6,153
+    C 426,151 430,180 433.7,181.4375
+    C 437,182 440,152 444.7,150.8125
+    C 448,150 451,178 455.8,179.25
+    C 459,180 462,156 466.8,155.1875
+    C 470,154 473,173 477.9,174.875
+    C 481,176 485,158 488.9,157.375
+    C 492,157 496,167 500,168.3125
+    C 503,169 506,146 509.5,144.25
+    C 512,143 515,128 517.4,126.75
+    C 520,125 525,98 530,96.25
+    C 534,94 537,67 541,65.5
+    C 545,64 548,98 552.2,100.5
+    C 556,102 560,63 564.8,61.25
+    C 568,60 571,102 575.9,104.875
+    C 579,107 582,60 588.5,59.125
+    C 593,58 596,104 599.6,107.0625
+    C 603,110 607,57 612.2,56.5
+    C 616,56 619,108 623.3,109.25
+    C 627,110 630,62 635.9,61.25
+    C 639,60 642,102 647,104.875
+    C 651,107 655,66 659.6,65.5
+    C 663,65 666,109 670.7,111.4375
+    C 674,113 678,128 683.3,131.125
+    C 687,134 691,155 694.4,157.375
+    C 698,160 703,177 707,179.25
+    C 710,181 714,150 718,148.625
+    C 722,147 726,182 730.7,183.625
+    C 734,185 738,148 741.8,146.4375
+    C 745,145 749,184 754.4,185.8125
+    C 758,187 761,150 765.5,148.625
+    C 769,147 773,182 778.1,183.625
+    C 782,185 785,152 789.2,150.8125
+    C 793,150 797,180 801.8,181.4375
+    C 805,182 808,154 812.9,153
+    C 816,152 820,178 825.5,179.25
+    C 829,180 832,156 836.6,155.1875
+    C 840,154 843,175 849.2,177.0625
+    C 853,178 856,158 860.3,157.375
+    C 862,157 863,165 865,174.875
+  " fill="none" stroke="#1e3a5f" stroke-width="1.8"/>
+
+  <!-- Top subplot Y axis ticks -->
+  <line x1="75" y1="74" x2="69" y2="74" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="78" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">+1</text>
+  <line x1="75" y1="118" x2="69" y2="118" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="122" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">0</text>
+  <line x1="75" y1="162" x2="69" y2="162" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="166" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">&#x2212;1</text>
+
+  <!-- Top subplot Y axis label -->
+  <text x="22" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c" transform="rotate(-90, 22, 118)">x(t)</text>
+
+  <!-- Subplot (a) label -->
+  <text x="82" y="65" font-family="Georgia, serif" font-size="11" font-weight="bold" fill="#1e3a5f">(a)</text>
+
+  <!-- Divider between subplots -->
+  <line x1="75" y1="196" x2="865" y2="196" stroke="#d6d2c8" stroke-width="0.8" stroke-dasharray="2,4"/>
+
+  <!-- Bottom subplot border: top=210, bottom=350, left=75, right=865 -->
+  <rect x="75" y="210" width="790" height="140" fill="none" stroke="#d6d2c8" stroke-width="1"/>
+
+  <!-- Bottom subplot zero line -->
+  <line x1="75" y1="280" x2="865" y2="280" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Velocity reference lines at +1 and -1 -->
+  <line x1="75" y1="236" x2="865" y2="236" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="75" y1="324" x2="865" y2="324" stroke="#d6d2c8" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- Chaotic velocity xdot(t): red, out of phase from x(t) -->
+  <path clip-path="url(#clipBot)" d="
+    M 75,280
+    C 77,244 80,219 84.5,215
+    C 88,212 91,264 94,280
+    C 97,296 100,340 105,337
+    C 109,334 112,282 116,280
+    C 119,278 122,222 125.6,221
+    C 129,220 132,270 136.6,278
+    C 140,285 143,340 146.1,338
+    C 150,336 153,284 157.2,280
+    C 161,276 164,228 166.6,227
+    C 170,226 173,272 177.7,280
+    C 181,287 184,336 187.2,334
+    C 190,332 193,288 198.2,280
+    C 202,273 205,234 209.3,233
+    C 213,232 217,278 220.4,280
+    C 224,282 227,326 231.4,325
+    C 235,324 238,284 242.5,280
+    C 246,276 249,241 252,240
+    C 256,239 259,274 264.6,280
+    C 268,284 271,318 275.7,315
+    C 279,313 282,286 285.1,284
+    C 288,282 290,272 292.9,268
+    C 296,264 299,248 304,238
+    C 308,228 312,214 315,211
+    C 319,208 322,242 326.2,252
+    C 330,262 333,315 335.7,322
+    C 339,329 343,310 346.8,305
+    C 350,301 354,262 357.8,258
+    C 361,255 364,296 367.3,305
+    C 371,314 374,330 378.4,328
+    C 382,326 385,288 389.4,284
+    C 393,280 396,256 400.5,253
+    C 404,251 407,288 411.5,294
+    C 415,300 418,320 422.6,318
+    C 426,316 430,282 433.7,278
+    C 437,274 440,252 444.7,250
+    C 448,248 451,282 455.8,288
+    C 459,293 462,318 466.8,316
+    C 470,314 473,284 477.9,280
+    C 481,276 485,258 488.9,256
+    C 492,254 495,278 500,284
+    C 503,288 506,308 509.5,305
+    C 512,303 515,288 517.4,284
+    C 520,280 525,248 530,244
+    C 534,241 537,276 541,280
+    C 545,284 548,320 552.2,324
+    C 556,328 560,286 564.8,280
+    C 568,274 572,232 575.9,228
+    C 579,225 582,268 588.5,280
+    C 592,289 596,332 599.6,336
+    C 603,339 607,296 612.2,288
+    C 616,282 619,236 623.3,230
+    C 627,225 631,268 635.9,278
+    C 639,286 643,332 647,336
+    C 651,339 655,292 659.6,284
+    C 663,277 667,234 670.7,228
+    C 674,223 678,252 683.3,260
+    C 687,267 691,302 694.4,310
+    C 698,318 703,330 707,334
+    C 711,338 714,316 718,308
+    C 722,300 726,260 730.7,254
+    C 734,249 738,282 741.8,290
+    C 745,297 749,330 754.4,336
+    C 758,340 761,314 765.5,306
+    C 769,298 773,258 778.1,252
+    C 782,247 785,278 789.2,286
+    C 793,293 797,328 801.8,333
+    C 805,337 808,316 812.9,308
+    C 816,301 820,264 825.5,256
+    C 829,249 832,276 836.6,284
+    C 840,291 844,322 849.2,328
+    C 853,333 856,314 860.3,306
+    C 862,302 863,292 865,284
+  " fill="none" stroke="#8b2c2c" stroke-width="1.8"/>
+
+  <!-- Bottom subplot Y axis ticks -->
+  <line x1="75" y1="236" x2="69" y2="236" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="240" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">+1</text>
+  <line x1="75" y1="280" x2="69" y2="280" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="284" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">0</text>
+  <line x1="75" y1="324" x2="69" y2="324" stroke="#d6d2c8" stroke-width="1"/>
+  <text x="62" y="328" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#5c5c5c">&#x2212;1</text>
+
+  <!-- Bottom subplot Y axis label -->
+  <text x="22" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c" transform="rotate(-90, 22, 280)">&#7819;(t)</text>
+
+  <!-- Subplot (b) label -->
+  <text x="82" y="227" font-family="Georgia, serif" font-size="11" font-weight="bold" fill="#1e3a5f">(b)</text>
+
+  <!-- Shared X axis -->
+  <line x1="75" y1="350" x2="865" y2="350" stroke="#d6d2c8" stroke-width="1.5"/>
+
+  <!-- X axis ticks: t = 0, 10, 20, 30, 40, 50 -->
+  <line x1="75" y1="350" x2="75" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="75" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">0</text>
+  <line x1="233" y1="350" x2="233" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="233" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">10</text>
+  <line x1="391" y1="350" x2="391" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="391" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">20</text>
+  <line x1="549" y1="350" x2="549" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="549" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">30</text>
+  <line x1="707" y1="350" x2="707" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="707" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">40</text>
+  <line x1="865" y1="350" x2="865" y2="357" stroke="#d6d2c8" stroke-width="1.2"/>
+  <text x="865" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">50</text>
+
+  <!-- X axis label -->
+  <text x="470" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c5c5c">Time t / T</text>
+
+  <!-- Legend -->
+  <rect x="698" y="52" width="158" height="48" fill="#faf9f6" stroke="#d6d2c8" stroke-width="0.8" rx="2"/>
+  <line x1="706" y1="67" x2="730" y2="67" stroke="#1e3a5f" stroke-width="1.8"/>
+  <text x="736" y="71" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Displacement x(t)</text>
+  <line x1="706" y1="87" x2="730" y2="87" stroke="#8b2c2c" stroke-width="1.8"/>
+  <text x="736" y="91" font-family="Georgia, serif" font-size="11" fill="#5c5c5c">Velocity &#7819;(t)</text>
 </svg>
