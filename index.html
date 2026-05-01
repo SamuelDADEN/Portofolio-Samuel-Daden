@@ -26,8 +26,7 @@ title: Home
       </div>
     </div>
     <div class="hero-avatar">
-      <!-- Replace with: <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Samuel Daden"> -->
-      👤
+      <img src="{{ '/assets/images/avatar.svg' | relative_url }}" alt="Samuel Daden">
     </div>
   </div>
 </section>
@@ -111,6 +110,11 @@ title: Home
         </div>
         {% endif %}
       </div>
+      {% if project.image %}
+      <div class="card-thumb">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+      </div>
+      {% endif %}
     </a>
     {% endfor %}
   </div>
