@@ -94,11 +94,11 @@ title: Home
   <div class="projects-list">
     {% assign sorted_projects = site.projects | sort: "order" %}
     {% for project in sorted_projects %}
-    <a href="{{ project.url | relative_url }}" class="project-card">
+    <div class="project-card">
       <span class="card-num">0{{ forloop.index }}</span>
       <div class="card-body">
         <div class="card-header">
-          <span class="card-title">{{ project.title }}</span>
+          <a href="{{ project.url | relative_url }}" class="card-title">{{ project.title }}</a>
           <span class="card-tag">{{ project.category }}</span>
         </div>
         <p class="card-desc">{{ project.summary }}</p>
@@ -110,12 +110,25 @@ title: Home
         </div>
         {% endif %}
       </div>
-      {% if project.image %}
-      <div class="card-thumb">
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+      {% if project.images %}
+      <div class="carousel">
+        <div class="carousel-track">
+          {% for img in project.images %}
+          <div class="carousel-slide{% if forloop.first %} active{% endif %}">
+            <img src="{{ img.src | relative_url }}" alt="{{ img.caption | default: project.title }}">
+          </div>
+          {% endfor %}
+        </div>
+        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          {% for img in project.images %}
+          <button class="carousel-dot{% if forloop.first %} active{% endif %}" aria-label="Slide {{ forloop.index }}"></button>
+          {% endfor %}
+        </div>
       </div>
       {% endif %}
-    </a>
+    </div>
     {% endfor %}
   </div>
 </section>
