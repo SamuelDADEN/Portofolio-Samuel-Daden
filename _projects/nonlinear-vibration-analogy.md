@@ -1,7 +1,7 @@
 ---
 title: "Electro-mechanic analogy of a non-linear system"
 subtitle: "Exploring the structural analogy between mechanical nonlinear oscillators and equivalent electrical or fluid systems."
-category: "vibratory Mechanics"
+category: "Vibratory Mechanics"
 icon: "〰️"
 summary: "Investigated the mathematical and physical analogy between nonlinear mechanical vibration systems (Duffing oscillator) based on a specific fan vibratory mechanism and equivalent analogous systems using PCB. The primary objective was to determine the existence of some configuration of a specific mode called "isolate" and to define a methodology to obtain it despite extremely unstable behavior and a non-directly achievable path."
 tools: [Python, MATLAB]
