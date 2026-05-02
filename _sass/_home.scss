@@ -310,6 +310,18 @@
 .carousel-prev { left: 8px; }
 .carousel-next { right: 8px; }
 
+.carousel-caption {
+  padding: 8px 12px;
+  font-family: $font-sans;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: $color-muted;
+  text-align: center;
+  border-top: 1px solid $color-border;
+  background: $color-surface;
+  margin: 0;
+}
+
 .carousel-dots {
   display: flex;
   justify-content: center;

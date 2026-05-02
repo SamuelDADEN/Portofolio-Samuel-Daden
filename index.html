@@ -113,6 +113,7 @@ title: Home
           {% for img in project.images %}
           <div class="carousel-slide{% if forloop.first %} active{% endif %}">
             <img src="{{ img.src | relative_url }}" alt="{{ img.caption | default: project.title }}">
+            {% if img.caption %}<p class="carousel-caption">{{ img.caption }}</p>{% endif %}
           </div>
           {% endfor %}
         </div>
