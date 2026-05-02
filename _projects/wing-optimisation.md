@@ -3,16 +3,16 @@ title: "Wing Aerodynamic Optimisation"
 subtitle: "Shape optimisation of a wing using OpenVSP for geometry and Xfoil for 2D aerodynamic analysis."
 category: "Computational Aerodynamics"
 icon: "🛩️"
-summary: "Optimised wing planform and airfoil shape to maximise the lift-to-drag ratio at cruise condition, using OpenVSP for 3D geometry and Xfoil for section-level aerodynamic evaluation."
+summary: "Starting from the needed specification (Clmax = 1.9, Cd(Cl=0.4)<0.006 …), the primary objective was to find the most optimised airfoil. Using Xfoil and thanks to AeroSandbox (MIT 2025), the final airfoil profile fulfilled all the constraints and maintained a smooth behavior concerning the stall. For the wing shape, numerous different configurations were used to determine the safest with a lift distribution as elliptic as possible. Finally, linear twist was chosen and the elliptical shape was obtained optimising the chord distribution."
 tools: [OpenVSP, Xfoil, Python,AeroSandbox]
 keywords: [wing optimisation, aerodynamics, lift-to-drag, airfoil, OpenVSP, Xfoil]
 image: /assets/images/wing-polar.jpeg
 images:
-  - src: /assets/images/wing-polar.jpeg
-    caption: "Fig. 1 — Drag polar: baseline vs. optimised wing"
-  - src: /assets/images/wing-planform.svg
-    caption: "Fig. 2 — Planform comparison: baseline vs. optimised"
-  - src: /assets/images/wing-lift-distribution.svg
+  - src: /assets/images/Wing1.jpeg
+    caption: "Fig. 1 — First look at the most optimised aifroil profile"
+  - src: /assets/images/Wing3.jpeg
+    caption: "Fig. 2 — Final shape and main caracteristics of the wing"
+  - src: /assets/images/Wing2.jpeg
     caption: "Fig. 3 — Spanwise lift distribution"
 order: 2
 ---
