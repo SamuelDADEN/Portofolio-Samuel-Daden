@@ -10,7 +10,7 @@ image: /assets/images/control-surface-sizing.jpeg
 images:
   - src: /assets/images/Ctrl1.jpeg
     caption: "Fig. 1 — Exemple of the aileron sizing thanks to the related constraint"
-  - src: /assets/images/Ctlr2.jpeg
+  - src: /assets/images/Ctrl2.jpeg
     caption: "Fig. 2 — Flight dynamics laws use for simulation"
   - src: /assets/images/Ctrl3.jpeg
     caption: "Fig. 3 — Exemple of aileron deflection simuation"
