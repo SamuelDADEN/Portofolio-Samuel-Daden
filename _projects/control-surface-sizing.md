@@ -1,19 +1,19 @@
 ---
-title: "Optimised Control Surface Sizing"
+title: "Control surface sizing tool"
 subtitle: "A systematic methodology for determining the minimum control surface area satisfying stability and manoeuvrability requirements."
-category: "Aeronautics"
+category: "Aeronautics/design"
 icon: "✈️"
-summary: "Developed an optimisation framework to size control surfaces (ailerons, elevators, rudder) while minimising structural weight and aerodynamic drag, subject to handling-quality constraints."
-tools: [Python, MATLAB, Xfoil]
-keywords: [control surfaces, sizing, optimisation, flight mechanics, aerodynamics]
+summary: "Developed a control surface sizing tool that utilizes certification rules and aircraft specifications to determine sizing constraints and obtain related control surfaces. In this academic project, I was more precisely responsible for the aircraft dynamic model, consisting of the simulation of the deflection and manoeuvres thanks to flight dynamics laws."
+tools: [Python, OpenVSP]
+keywords: [control surfaces, sizing, optimisation, flight mechanics, aerodynamics, certification]
 image: /assets/images/control-surface-sizing.jpeg
 images:
-  - src: /assets/images/control-surface-sizing.jpeg
-    caption: "Fig. 1 — Feasible region and active constraints"
-  - src: /assets/images/control-surface-geometry.svg
-    caption: "Fig. 2 — Control surface layout and chord-ratio definition"
-  - src: /assets/images/control-surface-sensitivity.svg
-    caption: "Fig. 3 — Normalised sensitivity of constraints to design variables"
+  - src: /assets/images/Ctrl1.jpeg
+    caption: "Fig. 1 — Exemple of the aileron sizing thanks to the related constraint"
+  - src: /assets/images/Ctrl2.jpeg
+    caption: "Fig. 2 — Flight dynamics laws use for simulation"
+  - src: /assets/images/Ctrl3.jpeg
+    caption: "Fig. 3 — Exemple of aileron deflection simuation"
 order: 1
 ---
 
