@@ -1,5 +1,5 @@
 ---
-title: "Electromechanic analogy of a non-linear system"
+title: "Electro-mechanic analogy of a non-linear system"
 subtitle: "Exploring the structural analogy between mechanical nonlinear oscillators and equivalent electrical or fluid systems."
 category: "Vibratory Mechanics"
 icon: "〰️"
