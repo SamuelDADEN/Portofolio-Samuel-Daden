@@ -4,8 +4,8 @@ subtitle: "Exploring the structural analogy between mechanical nonlinear oscilla
 category: "Vibratory Mechanics"
 icon: "〰️"
 summary: "Investigated the mathematical and physical analogy between nonlinear mechanical vibration systems (Duffing oscillator) based on a specific fan vibratory mechanism and equivalent analogous systems using PCB. The primary objective was to determine the existence of some configuration of a specific mode called "isolate" and to define a methodology to obtain it despite extremely unstable behavior and a non-directly achievable path."
-tools: [Python, MATLAB]
-keywords: [nonlinear dynamics, vibrations, analogy, Duffing oscillator, mechanical systems]
+tools: ["Python", "MATLAB"]
+keywords: ["nonlinear dynamics", "vibrations", "analogy", "Duffing oscillator", "mechanical systems"]
 image: /assets/images/Vib1.jpeg
 images:
   - src: /assets/images/Vib1.jpeg
