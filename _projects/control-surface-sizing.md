@@ -3,17 +3,17 @@ title: "Control surface sizing tool"
 subtitle: "A systematic methodology for determining the minimum control surface area satisfying stability and manoeuvrability requirements."
 category: "Aeronautics/design"
 icon: "✈️"
-summary: "Developed a control surface sizing tool that utilizes certification rules and aircraft specifications to determine sizing constraints and obtain related control surfaces. In this academic project, I was more precisely responsible for the aircraft dynamic model, consisting of the simulation of the deflection and manoeuvres thanks to flight dynamics laws."
+summary: "Developed a control surface sizing tool that utilises certification rules and aircraft specifications to determine sizing constraints and obtain related control surfaces. In this academic project, I was more precisely responsible for the aircraft dynamic model, consisting of the simulation of deflections and manoeuvres using flight dynamics equations."
 tools: [Python, OpenVSP]
 keywords: [control surfaces, sizing, optimisation, flight mechanics, aerodynamics, certification]
 image: /assets/images/control-surface-sizing.jpeg
 images:
   - src: /assets/images/Ctrl1.jpeg
-    caption: "Fig. 1 — Exemple of the aileron sizing thanks to the related constraint"
+    caption: "Fig. 1 — Example of aileron sizing from the related constraint"
   - src: /assets/images/Ctrl2.jpeg
-    caption: "Fig. 2 — Flight dynamics laws use for simulation"
+    caption: "Fig. 2 — Flight dynamics equations used for simulation"
   - src: /assets/images/Ctrl3.jpeg
-    caption: "Fig. 3 — Exemple of aileron deflection simuation"
+    caption: "Fig. 3 — Example of aileron deflection simulation"
 order: 1
 ---
 

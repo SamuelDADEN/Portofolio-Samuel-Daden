@@ -3,17 +3,17 @@ title: "Electro-mechanic analogy of a non-linear system"
 subtitle: "Exploring the structural analogy between mechanical nonlinear oscillators and equivalent electrical or fluid systems."
 category: "Vibratory Mechanics"
 icon: "〰️"
-summary: "Investigated the mathematical and physical analogy between nonlinear mechanical vibration systems (Duffing oscillator) based on a specific fan vibratory mechanism and equivalent analogous systems using PCB. The primary objective was to determine the existence of some configuration of a specific mode called \"isolate\" and to define a methodology to obtain it despite extremely unstable behavior and a non-directly achievable path."
+summary: "Investigated the mathematical and physical analogy between a nonlinear mechanical vibration system (Duffing oscillator based on a specific fan vibratory mechanism) and equivalent analogous systems using a PCB. The primary objective was to determine whether isolated response branches (isolas) could exist for certain configurations, and to define a methodology to reach them despite extremely unstable behaviour and the absence of a directly accessible path."
 tools: [Python, MATLAB]
 keywords: [nonlinear dynamics, vibrations, analogy, Duffing oscillator, mechanical systems]
 image: /assets/images/Vib1.jpeg
 images:
   - src: /assets/images/Vib1.jpeg
-    caption: "Fig. 1 — Original subject and related equations"
+    caption: "Fig. 1 — Original subject and governing equations"
   - src: /assets/images/Vib2.jpeg
     caption: "Fig. 2 — Schematic of the printed circuit analogy"
   - src: /assets/images/Vib3.jpeg
-    caption: "Fig. 3 — Exemple of isotates,completly disconnected from the main curves"
+    caption: "Fig. 3 — Example of isolas, completely disconnected from the main response curves"
 order: 3
 ---
 
