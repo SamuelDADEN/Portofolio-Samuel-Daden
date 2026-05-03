@@ -641,12 +641,17 @@
   }
 }
 
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
 .contact-phone {
-  margin-top: 16px !important;
-  margin-bottom: 0 !important;
   font-family: $font-mono;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: $color-navy !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: $color-navy;
   letter-spacing: 0.04em;
 }
