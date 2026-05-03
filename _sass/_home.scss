@@ -255,6 +255,72 @@
   &:hover { color: $color-accent-2; text-decoration: none; }
 }
 
+// ── Other Projects (mini cards) ──────────────────────
+.mini-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mini-card {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid $color-border;
+  align-items: center;
+
+  &:first-child { border-top: 1px solid $color-border; }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    .mini-card-image { display: none; }
+  }
+}
+
+.mini-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mini-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mini-card-title {
+  font-family: $font-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: $color-navy;
+}
+
+.mini-card-desc {
+  font-size: 0.875rem;
+  color: $color-muted;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.mini-card-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid $color-border;
+  background: $color-surface;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 // ── Carousel ─────────────────────────────────────────
 .carousel {
   grid-column: 2;
