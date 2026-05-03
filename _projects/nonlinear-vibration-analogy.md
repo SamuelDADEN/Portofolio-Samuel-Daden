@@ -9,11 +9,11 @@ keywords: [nonlinear dynamics, vibrations, analogy, Duffing oscillator, mechanic
 image: /assets/images/Vib1.jpeg
 images:
   - src: /assets/images/Vib1.jpeg
-    caption: "Fig. 1 — Phase portrait of the Duffing oscillator"
+    caption: "Fig. 1 — Original subject and related equations"
   - src: /assets/images/Vib2.jpeg
-    caption: "Fig. 2 — Nonlinear frequency response (jump phenomenon)"
+    caption: "Fig. 2 — Schematic of the printed circuit analogy"
   - src: /assets/images/Vib3.jpeg
-    caption: "Fig. 3 — Chaotic time history: displacement and velocity"
+    caption: "Fig. 3 — Exemple of isotates,completly disconnected from the main curves"
 order: 3
 ---
 
